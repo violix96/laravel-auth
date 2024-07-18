@@ -25,6 +25,7 @@ class ProjectController extends Controller
             'title' => 'required|string|max:255',
             'description' => 'nullable|string',
             'languages' => 'required|string|max:255',
+            'slug' => 'required|string|max:255',
         ]);
 
         Project::create($request->all());
@@ -48,6 +49,8 @@ class ProjectController extends Controller
             'title' => 'required|string|max:255',
             'description' => 'nullable|string',
             'languages' => 'required|string|max:255',
+            'slug' => 'required|string|max:255',
+
         ]);
 
         $project->update($request->all());
