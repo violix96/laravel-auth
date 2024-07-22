@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="container">
+    <div class="container bg-primary">
         <h1>Lista dei progetti</h1>
         <a href="{{ route('projects.create') }}" class="btn btn-primary">Crea un nuovo progetto</a>
         @if (session('success'))

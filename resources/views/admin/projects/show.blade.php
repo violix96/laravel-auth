@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="container">
+    <div class="container bg-primary py-3" style="color: white">
         <h1>{{ $project->title }}</h1>
         <p>{{ $project->description }}</p>
         <p><strong>Linguaggi:</strong> {{ $project->languages }}</p>
